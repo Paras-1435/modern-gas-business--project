@@ -255,10 +255,12 @@ function addToCart(productId) {
   if (existing) {
     existing.qty += 1;
   } else {
+    const productImages = getProductImages(item);
     cart.push({
       id: item.id,
       name: item.name,
       price: item.price,
+      image: productImages[0] || "",
       qty: 1
     });
   }
@@ -302,6 +304,7 @@ function renderCart() {
     .map(
       (item) => `
       <div class="cart-item">
+        <img class="cart-item-thumb" src="${item.image || ""}" alt="${item.name}" loading="lazy" />
         <div>
           <strong>${item.name}</strong>
           <small>${currency.format(item.price)} each</small>
