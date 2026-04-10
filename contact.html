@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Gas Appliances | Contact</title>
+  <meta name="description" content="Contact Modern Gas Appliances for sales, support, repair, and wholesale inquiries." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html"><span>M</span>odern Gas Appliances</a>
+      <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="primaryNav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="repair.html">Repairs</a>
+        <a href="wholesale.html">Wholesale</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="section page-top">
+    <div class="container two-col">
+      <section class="panel reveal">
+        <h1>Contact Us</h1>
+        <p>Need a product suggestion or service support? Our team is ready to help.</p>
+        <div class="contact-list">
+          <p><i class="fa-solid fa-phone"></i> +91 9999 111 222</p>
+          <p><i class="fa-solid fa-envelope"></i> hello@moderngasappliances.com</p>
+          <p><i class="fa-solid fa-location-dot"></i> 21 Market Road, New Delhi, India</p>
+        </div>
+        <div class="map-wrap">
+          <iframe
+            title="Modern Gas Appliances location"
+            src="https://www.google.com/maps?q=New+Delhi+India&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+
+      <section class="panel reveal">
+        <h2>Send a Message</h2>
+        <form class="smart-form" data-validate>
+          <label for="contactFullName">Full Name</label>
+          <input id="contactFullName" name="name" type="text" required minlength="3" placeholder="Enter your full name" />
+
+          <label for="contactEmail">Email</label>
+          <input id="contactEmail" name="email" type="email" required placeholder="you@example.com" />
+
+          <label for="contactPhone">Phone</label>
+          <input id="contactPhone" name="phone" type="tel" required pattern="[0-9]{10}" placeholder="10-digit phone" />
+
+          <label for="contactMessage">Message</label>
+          <textarea id="contactMessage" name="message" required minlength="15" placeholder="How can we help you?"></textarea>
+
+          <button class="btn btn-primary btn-block" type="submit">Submit</button>
+          <p class="form-msg" aria-live="polite"></p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Modern Gas Appliances</h3>
+        <p>Sales, service, and support under one trusted name.</p>
+      </div>
+      <div>
+        <h4>Phone</h4>
+        <p>+91 9999 111 222</p>
+      </div>
+      <div>
+        <h4>Email</h4>
+        <p>hello@moderngasappliances.com</p>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Modern Gas Appliances. All rights reserved.</p>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="closeCart" aria-label="Close cart"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div id="cartItems"></div>
+    <div class="cart-footer">
+      <p>Total: <strong id="cartTotal">₹0</strong></p>
+      <button class="btn btn-primary btn-block" id="checkoutBtn">Proceed to Checkout</button>
+    </div>
+  </aside>
+
+  <a class="whatsapp-float" href="https://wa.me/919999111222" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

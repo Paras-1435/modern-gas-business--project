@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Gas Appliances | Repair Services</title>
+  <meta name="description" content="Book professional gas stove and induction repair services with Modern Gas Appliances." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html"><span>M</span>odern Gas Appliances</a>
+      <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="primaryNav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="repair.html" class="active">Repairs</a>
+        <a href="wholesale.html">Wholesale</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="section page-top">
+    <div class="container two-col">
+      <section class="panel reveal">
+        <h1>Repair Services</h1>
+        <p>Certified support for homes, hostels, cafes, and commercial kitchens.</p>
+        <ul class="service-list">
+          <li><i class="fa-solid fa-check"></i> Gas stove ignition and burner servicing</li>
+          <li><i class="fa-solid fa-check"></i> Gas leakage check and regulator replacement</li>
+          <li><i class="fa-solid fa-check"></i> Induction cooktop PCB and sensor diagnosis</li>
+          <li><i class="fa-solid fa-check"></i> Spare parts replacement with warranty</li>
+          <li><i class="fa-solid fa-check"></i> Annual maintenance contracts for businesses</li>
+        </ul>
+        <a class="btn btn-primary" href="https://wa.me/919999111222" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+        </a>
+      </section>
+
+      <section class="panel reveal">
+        <h2>Book a Repair Visit</h2>
+        <form class="smart-form" data-validate>
+          <label for="repairName">Full Name</label>
+          <input id="repairName" name="name" type="text" required minlength="3" placeholder="Enter your name" />
+
+          <label for="repairPhone">Phone</label>
+          <input id="repairPhone" name="phone" type="tel" required pattern="[0-9]{10}" placeholder="10-digit phone" />
+
+          <label for="repairAddress">Address</label>
+          <textarea id="repairAddress" name="address" required minlength="10" placeholder="Your complete address"></textarea>
+
+          <label for="repairIssue">Issue Description</label>
+          <textarea id="repairIssue" name="issue" required minlength="15" placeholder="Describe the issue briefly"></textarea>
+
+          <button class="btn btn-primary btn-block" type="submit">Submit Booking</button>
+          <p class="form-msg" aria-live="polite"></p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Modern Gas Appliances</h3>
+        <p>Repair, maintenance, and spare support trusted by households and businesses.</p>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <p><i class="fa-solid fa-phone"></i> +91 9999 111 222</p>
+        <p><i class="fa-solid fa-envelope"></i> service@moderngasappliances.com</p>
+      </div>
+      <div>
+        <h4>Service Time</h4>
+        <p>Mon-Sat: 9:00 AM - 8:00 PM</p>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Modern Gas Appliances. All rights reserved.</p>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="closeCart" aria-label="Close cart"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div id="cartItems"></div>
+    <div class="cart-footer">
+      <p>Total: <strong id="cartTotal">₹0</strong></p>
+      <button class="btn btn-primary btn-block" id="checkoutBtn">Proceed to Checkout</button>
+    </div>
+  </aside>
+
+  <a class="whatsapp-float" href="https://wa.me/919999111222" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

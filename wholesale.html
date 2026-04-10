@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Gas Appliances | Wholesale</title>
+  <meta name="description" content="Wholesale gas and induction appliances with competitive bulk pricing." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html"><span>M</span>odern Gas Appliances</a>
+      <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="primaryNav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="repair.html">Repairs</a>
+        <a href="wholesale.html" class="active">Wholesale</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="section page-top">
+    <div class="container two-col">
+      <section class="panel reveal">
+        <h1>Wholesale Supply</h1>
+        <p>We partner with retailers, project contractors, hospitality businesses, and distributors.</p>
+        <div class="info-stack">
+          <article>
+            <h3>Bulk Pricing</h3>
+            <p>Tiered rates based on quantity and product type.</p>
+          </article>
+          <article>
+            <h3>Reliable Dispatch</h3>
+            <p>Fast pan-India shipment for urgent commercial requirements.</p>
+          </article>
+          <article>
+            <h3>Dedicated Manager</h3>
+            <p>A single point of contact for catalog, payments, and repeat orders.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel reveal">
+        <h2>Wholesale Inquiry</h2>
+        <form class="smart-form" data-validate>
+          <label for="companyName">Company Name</label>
+          <input id="companyName" name="company" type="text" required minlength="2" placeholder="Enter company name" />
+
+          <label for="contactName">Contact Person</label>
+          <input id="contactName" name="contact" type="text" required minlength="3" placeholder="Enter contact person name" />
+
+          <label for="whatsappPhone">Phone / WhatsApp</label>
+          <input id="whatsappPhone" name="phone" type="tel" required pattern="[0-9]{10}" placeholder="10-digit phone" />
+
+          <label for="bulkRequirements">Bulk Requirement</label>
+          <textarea id="bulkRequirements" name="requirements" required minlength="15" placeholder="Mention product types and expected quantity"></textarea>
+
+          <button class="btn btn-primary btn-block" type="submit">Send Inquiry</button>
+          <p class="form-msg" aria-live="polite"></p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Modern Gas Appliances</h3>
+        <p>Wholesale procurement made simple and dependable.</p>
+      </div>
+      <div>
+        <h4>Wholesale Desk</h4>
+        <p><i class="fa-solid fa-phone"></i> +91 9811 222 333</p>
+        <p><i class="fa-solid fa-envelope"></i> wholesale@moderngasappliances.com</p>
+      </div>
+      <div>
+        <h4>Address</h4>
+        <p>21 Market Road, New Delhi, India</p>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Modern Gas Appliances. All rights reserved.</p>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="closeCart" aria-label="Close cart"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div id="cartItems"></div>
+    <div class="cart-footer">
+      <p>Total: <strong id="cartTotal">₹0</strong></p>
+      <button class="btn btn-primary btn-block" id="checkoutBtn">Proceed to Checkout</button>
+    </div>
+  </aside>
+
+  <a class="whatsapp-float" href="https://wa.me/919999111222" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
